@@ -14,7 +14,7 @@ public class TestBase {
     public  AppiumDriver appiumDriver;
 
     public static   DesiredCapabilities desiredCapabilities ;
-    public static final String APPIUM_SERVER_URL = "http://localhost:4723/wd/hub";
+    //public static final String APPIUM_SERVER_URL = "http://localhost:4723/";
 
     public  AppiumDriver initializeDriver() {
         if (appiumDriver == null) {
@@ -27,7 +27,7 @@ public class TestBase {
         desiredCapabilities = CreateCapabilities.setDesiredCapabilities();
         System.out.println(desiredCapabilities + "heloo capp");
         try {
-            return new AppiumDriver(new URL(APPIUM_SERVER_URL), desiredCapabilities);
+            return new AppiumDriver(new URL("http://localhost:4723/"), desiredCapabilities);
         } catch (MalformedURLException e) {
             e.printStackTrace();
             return null;

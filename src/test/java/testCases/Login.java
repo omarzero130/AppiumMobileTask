@@ -11,7 +11,6 @@ public class Login extends TestBase{
     public void login () throws InterruptedException {
         homepage = new HomePage(appiumDriver);
         homepage.clickOnPostAddButton();
-        System.out.println("loginFunction");
 
     }
 
