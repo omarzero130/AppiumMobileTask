@@ -1,0 +1,8 @@
+{
+  "appium:automationName": "UIAutomator2",
+  "platformName": "Android",
+  "appium:platformVersion": "11.0",
+  "appium:deviceName": "Pixel 4 API 30",
+  "appium:appPackage": "com.forsale.forsale",
+  "appium:appActivity": "com.forsale.app.features.maincontainer.MainContainerActivity"
+}

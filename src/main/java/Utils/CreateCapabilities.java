@@ -14,7 +14,7 @@ public class CreateCapabilities {
     public static Map<String, Object> getCapabilities() {
         Map<String, Object> keyValueMap = new HashMap<>();
         JSONParser parser = new JSONParser();
-        try (Reader reader = new FileReader(System.getProperty("user.dir")+"/src/main/resources/caps.json")) {
+        try (Reader reader = new FileReader(System.getProperty("user.dir")+"/src/main/resources/Configs/caps.json")) {
             keyValueMap = (JSONObject) parser.parse(reader);
             for (Map.Entry<String, Object> entry : keyValueMap.entrySet()) {
                 System.out.println(entry.getKey() + ": " + entry.getValue());
