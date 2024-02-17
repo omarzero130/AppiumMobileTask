@@ -1,4 +1,10 @@
 package Pages;
 
-public class ChooseLocationPage {
+import io.appium.java_client.AppiumDriver;
+
+public class ChooseLocationPage extends PageBase{
+    public ChooseLocationPage(AppiumDriver driver) {
+        super(driver);
+    }
+
 }

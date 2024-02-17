@@ -2,36 +2,32 @@
 package testCases;
 import Utils.CreateCapabilities;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
+
 
 public class TestBase {
 
-    private static AppiumDriver driver;
+    public  AppiumDriver appiumDriver;
 
     public static   DesiredCapabilities desiredCapabilities ;
-    private static final String APPIUM_SERVER_URL = "http://localhost:4723/wd/hub";
+    public static final String APPIUM_SERVER_URL = "http://localhost:4723/wd/hub";
 
-    public static AppiumDriver initializeDriver() {
-        if (driver == null) {
-            driver = createDriver();
+    public  AppiumDriver initializeDriver() {
+        if (appiumDriver == null) {
+            appiumDriver = createDriver();
         }
-        return driver;
+        return appiumDriver;
     }
     private static AppiumDriver createDriver() {
         //initializeDriver();
         desiredCapabilities = CreateCapabilities.setDesiredCapabilities();
         System.out.println(desiredCapabilities + "heloo capp");
         try {
-            return new AndroidDriver(new URL(APPIUM_SERVER_URL), desiredCapabilities);
+            return new AppiumDriver(new URL(APPIUM_SERVER_URL), desiredCapabilities);
         } catch (MalformedURLException e) {
             e.printStackTrace();
             return null;
@@ -40,15 +36,15 @@ public class TestBase {
     }
 
     @BeforeClass
-    public static void setup(){
+    public  void setup(){
         initializeDriver();
     }
 
     @AfterClass
-        public static void quitDriver () {
-            if (driver != null) {
-                driver.quit();
-                driver = null;
+        public  void quitDriver () {
+            if (appiumDriver != null) {
+                appiumDriver.quit();
+                appiumDriver = null;
             }
         }
     }

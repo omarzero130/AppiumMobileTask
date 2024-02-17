@@ -1,15 +1,18 @@
 package testCases;
 
-import io.appium.java_client.AppiumDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+import Pages.HomePage;
 import org.testng.annotations.Test;
 
-public class Login extends  TestBase{
+public class Login extends TestBase{
+
+    HomePage homepage;
 
     @Test
-    public void login () {
-    System.out.println("Testtt");
+    public void login () throws InterruptedException {
+        homepage = new HomePage(appiumDriver);
+        homepage.clickOnPostAddButton();
+        System.out.println("loginFunction");
+
     }
 
 }
