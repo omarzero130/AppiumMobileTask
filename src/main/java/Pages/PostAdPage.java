@@ -15,13 +15,14 @@ public class PostAdPage extends PageBase {
     private By NextButton = By.xpath("//*[@text='Next']");
 
     private By ValidationPopUp = By.xpath("//*[@text='Kindly Fill all the required information!']");
-    private By ChooseCategoryDropDown = By.id("com.forsale.forsale:id/navgraph_postad");
-    private By MainCategory = By.id("com.forsale.forsale:id/navgraph_postad");
-    private By SubCategory = By.id("com.forsale.forsale:id/navgraph_postad");
+    private By ChooseCategoryDropDown = By.id("com.forsale.forsale:id/chooseCategoryField");
+    private By MainCategory = By.xpath("//*[@text='Automotive']");
+    private By SubCategory = By.xpath("//*[@text='Classic Cars']");
 
-    private By TitleField = By.id("com.forsale.forsale:id/navgraph_postad");
+    private By DistrictDropDown= By.id("com.forsale.forsale:id/chooseDistrictField");
 
-    private By PriceField = By.id("com.forsale.forsale:id/navgraph_postad");
+    private By TitleField = By.xpath("//*[@resource-id='com.forsale.forsale:id/adTitleField']");
+    private By PriceField = By.xpath("//*[@resource-id='com.forsale.forsale:id/adPriceField']");
 
     public void ClickOnNextButton() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
