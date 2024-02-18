@@ -1,5 +1,6 @@
 package testCases;
 
+import Pages.ChooseLocationPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Pages.PostAdPage;
@@ -13,6 +14,8 @@ public class Login extends TestBase{
 
     PostAdPage postAdPage;
 
+    ChooseLocationPage chooselocation;
+
     boolean isDisplayed;
 
     @Test
@@ -25,6 +28,28 @@ public class Login extends TestBase{
         postAdPage.ClickOnNextButton();
         isDisplayed= postAdPage.ValidateErrorPopup();
         Assert.assertTrue(isDisplayed,"Validation pop up is displayed");
+        postAdPage.ClickOnCategoryField();
+        postAdPage.ChooseMainCategory();
+        postAdPage.ChooseSubCategory();
+        postAdPage.ClickOnDistrictField();
+        postAdPage.ClickOnDistrictLocationField();
+        chooselocation= new ChooseLocationPage(super.appiumDriver);
+        chooselocation.ChooseDistrict();
+        chooselocation.ClickonDone();
+        chooselocation.ClickonAreaField();
+        chooselocation.ChooseArea();
+        chooselocation.ClickonDone();
+        chooselocation.ClickOnBlockField();
+        chooselocation.ChooseBlock();
+        chooselocation.ClickonDone();
+        chooselocation.ClickOnConfirmLocation();
+        postAdPage.EnterTitleField();
+        postAdPage.EnterPriceField();
+        postAdPage.ClickOnNextButton();
+
+
+
+
 
     }
 

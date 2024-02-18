@@ -8,6 +8,10 @@ public class AddMediaPageBase extends PageBase {
     public AddMediaPageBase(AppiumDriver driver) {
         super(driver);
     }
-    private By MediaPageTitle = By.id("com.forsale.forsale:id/navgraph_postad");
+    private By MediaPageTitle = By.xpath("//*[@text='Add Media']");
+
+    public void AsseronMediaPage() {
+
+    }
 
 }
