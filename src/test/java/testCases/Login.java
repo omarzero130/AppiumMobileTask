@@ -2,7 +2,8 @@ package testCases;
 
 import Pages.HomePage;
 import Pages.LoginPage;
-import Pages.PostAddPage;
+import Pages.PostAdPage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Login extends TestBase{
@@ -10,19 +11,20 @@ public class Login extends TestBase{
     HomePage homepage;
     LoginPage loginpage ;
 
-    PostAddPage postAdPage;
+    PostAdPage postAdPage;
+
+    boolean isDisplayed;
 
     @Test
     public void login () throws InterruptedException {
         homepage = new HomePage(super.appiumDriver);
         homepage.clickOnPostAddButton();
         loginpage = new LoginPage(super.appiumDriver);
-         // loginpage.EnterPhoneNumber();
-        //loginpage.EnterPassword();
-       // loginpage.ClickOnLoginButton();
         loginpage.LoginToApp();
-        postAdPage =new PostAddPage(super.appiumDriver);
+        postAdPage =new PostAdPage(super.appiumDriver);
         postAdPage.ClickOnNextButton();
+        isDisplayed= postAdPage.ValidateErrorPopup();
+        Assert.assertTrue(isDisplayed,"Validation pop up is displayed");
 
     }
 
