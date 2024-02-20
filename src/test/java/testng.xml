@@ -4,6 +4,8 @@
         <classes>
             <class name="testCases.LoginTC"/>
             <class name="testCases.ValidateOnErrorTC"></class>
+            <class name="testCases.PostAdTC"></class>
+            <class name="testCases.ValidateOnMediaPageTC"></class>
         </classes>
     </test>
 </suite>
