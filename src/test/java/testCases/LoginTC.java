@@ -28,7 +28,7 @@ public class LoginTC extends TestBase{
          HomePage homepage = new HomePage(super.appiumDriver);
         homepage.clickOnPostAddButton();
         LoginPage loginpage = new LoginPage(super.appiumDriver);
-        loginpage.LoginToApp();
+        loginpage.LoginToApp(username,password);
         //postAdPage =new PostAdPage(super.appiumDriver);
 //        postAdPage.ClickOnNextButton();
 //        isDisplayed= postAdPage.ValidateErrorPopup();

@@ -17,10 +17,10 @@ public class LoginPage extends PageBase{
 
     List<WebElement> LoginFields=driver.findElements(By.className("android.widget.EditText"));
     private By LoginButton = By.xpath("//*[@text='Login']");
-    public void LoginToApp () throws InterruptedException{
+    public void LoginToApp (String Username ,String Password) throws InterruptedException{
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-        LoginFields.get(0).sendKeys(Utils.LoginTestData.USER_PHONE);
-        LoginFields.get(1).sendKeys(Utils.LoginTestData.USER_PASSWORD);
+        LoginFields.get(0).sendKeys(Username);
+        LoginFields.get(1).sendKeys(Password);
         driver.findElement(LoginButton).click();
     }
 
