@@ -8,8 +8,13 @@ import java.util.List;
 
 public class LoginPage extends PageBase{
     public LoginPage(AppiumDriver driver) {
+
         super(driver);
     }
+    public AppiumDriver getDriver(){
+        return driver;
+    }
+
     List<WebElement> LoginFields=driver.findElements(By.className("android.widget.EditText"));
     private By LoginButton = By.xpath("//*[@text='Login']");
     public void LoginToApp () throws InterruptedException{

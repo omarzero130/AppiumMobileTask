@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="YourTestSuite">
+    <test name="LoginTest">
+        <classes>
+            <class name="testCases.Login"/>
+            <class name="testCases.ValidateOnError"></class>
+        </classes>
+    </test>
+</suite>

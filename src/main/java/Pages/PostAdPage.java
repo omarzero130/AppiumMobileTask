@@ -9,11 +9,11 @@ import java.time.Duration;
 
 public class PostAdPage extends PageBase {
     public PostAdPage(AppiumDriver driver) {
-        super(driver);
+       super(driver);
     }
     private By NextButton = By.xpath("//*[@text='Next']");
     private By DistrictLocationField = By.xpath("//*[@resource-id='com.forsale.forsale:id/locationSelectorText']");
-    private By ValidationPopUp = By.xpath("//*[@text='Kindly Fill all the required information!']");
+
     private By ChooseCategoryDropDown = By.id("com.forsale.forsale:id/chooseCategoryField");
     private By MainCategory = By.xpath("//*[@text='Automotive']");
     private By SubCategory = By.xpath("//*[@text='Classic Cars']");
@@ -34,7 +34,8 @@ public class PostAdPage extends PageBase {
         driver.findElement(NextButton).click();
     }
 
-    public boolean ValidateErrorPopup (){
+    public  boolean ValidateErrorPopup (){
+        By ValidationPopUp = By.xpath("//*[@text='Kindly Fill all the required information!']");
         boolean displayed = false ;
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
         if (driver.findElements(ValidationPopUp).size() > 0) {

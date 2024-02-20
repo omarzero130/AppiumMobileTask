@@ -1,44 +1,43 @@
 package testCases;
 
-import Pages.ChooseLocationPage;
-import Pages.HomePage;
-import Pages.LoginPage;
-import Pages.PostAdPage;
-import Utils.TestDataLoader;
-import org.testng.Assert;
+import Pages.*;
 import org.testng.annotations.Test;
 
 public class Login extends TestBase{
-
-    HomePage homepage;
-    LoginPage loginpage ;
-
+    private HomePage homepage;
+    private LoginPage loginpage ;
     PostAdPage postAdPage;
-
     ChooseLocationPage chooselocation;
-
     boolean isDisplayed;
 
-    @Test
-    public void testLogin() {
-        String username = TestDataLoader.getUsername();
-        String password = TestDataLoader.getPassword();
+    AddMediaPageBase addMediaPage;
 
-        System.out.println("Credentials is"+username + password);
+    String pageTitle;
 
-        // Perform login using username and password
+    public Login(){
+        super();
     }
+
 //    @Test
-//    public void login () throws InterruptedException {
-//        homepage = new HomePage(super.appiumDriver);
-//        homepage.clickOnPostAddButton();
-//        loginpage = new LoginPage(super.appiumDriver);
-//        loginpage.LoginToApp();
-//        postAdPage =new PostAdPage(super.appiumDriver);
+//    public void testLogin() {
+//        String username = TestDataLoader.getUsername();
+//        String password = TestDataLoader.getPassword();
+//
+//        System.out.println("Credentials is"+username + password);
+//
+//        // Perform login using username and password
+//    }
+    @Test
+    public void login () throws InterruptedException {
+        homepage = new HomePage(super.appiumDriver);
+        homepage.clickOnPostAddButton();
+        loginpage = new LoginPage(super.appiumDriver);
+        loginpage.LoginToApp();
+        postAdPage =new PostAdPage(super.appiumDriver);
 //        postAdPage.ClickOnNextButton();
 //        isDisplayed= postAdPage.ValidateErrorPopup();
 //        Assert.assertTrue(isDisplayed,"Validation pop up is displayed");
-//        postAdPage.ClickOnCategoryField();
+        //postAdPage.ClickOnCategoryField();
 //        postAdPage.ChooseMainCategory();
 //        postAdPage.ChooseSubCategory();
 //        postAdPage.ClickOnDistrictField();
@@ -56,11 +55,10 @@ public class Login extends TestBase{
 //        postAdPage.EnterTitleField();
 //        postAdPage.EnterPriceField();
 //        postAdPage.ClickOnNextButton();
-//
-//
-//
-//
-//
-//    }
+//        addMediaPage = new AddMediaPageBase(super.appiumDriver);
+//         pageTitle = addMediaPage.AsseronMediaPage();
+//         Assert.assertEquals(pageTitle,"Add Media");
+
+    }
 
 }

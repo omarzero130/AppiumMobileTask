@@ -10,8 +10,11 @@ public class AddMediaPageBase extends PageBase {
     }
     private By MediaPageTitle = By.xpath("//*[@text='Add Media']");
 
-    public void AsseronMediaPage() {
+    public String AsseronMediaPage() {
 
+        String Pagetitle = driver.findElement(MediaPageTitle).getText().toString();
+
+        return Pagetitle;
     }
 
 }
