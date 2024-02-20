@@ -2,8 +2,8 @@
 <suite name="YourTestSuite">
     <test name="LoginTest">
         <classes>
-            <class name="testCases.Login"/>
-            <class name="testCases.ValidateOnError"></class>
+            <class name="testCases.LoginTC"/>
+            <class name="testCases.ValidateOnErrorTC"></class>
         </classes>
     </test>
 </suite>

@@ -3,7 +3,7 @@ package testCases;
 import Pages.*;
 import org.testng.annotations.Test;
 
-public class Login extends TestBase{
+public class LoginTC extends TestBase{
     private HomePage homepage;
     private LoginPage loginpage ;
     PostAdPage postAdPage;
@@ -14,7 +14,7 @@ public class Login extends TestBase{
 
     String pageTitle;
 
-    public Login(){
+    public LoginTC(){
         super();
     }
 

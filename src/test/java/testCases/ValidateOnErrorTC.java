@@ -1,13 +1,10 @@
 package testCases;
 
-import Pages.LoginPage;
 import Pages.PostAdPage;
-import io.appium.java_client.AppiumDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class ValidateOnError  extends TestBase{
+public class ValidateOnErrorTC extends TestBase{
 
     private  boolean isDisplayed;
     @Test
