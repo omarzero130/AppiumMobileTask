@@ -28,7 +28,6 @@ public class TestDataLoader {
     public static String getTitle() {
         return properties.getProperty("AdTitle");
     }
-
     public static String getPrice() {
         return properties.getProperty("AdPrice");
     }

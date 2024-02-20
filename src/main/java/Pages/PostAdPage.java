@@ -69,13 +69,13 @@ public class PostAdPage extends PageBase {
         driver.findElement(DistrictLocationField).click();
     }
 
-    public void EnterTitleField()  {
+    public void EnterTitleField(String title)  {
         waitForElement(TitleField);
-        driver.findElement(TitleField).sendKeys("TestTitleField");
+        driver.findElement(TitleField).sendKeys(title);
     }
-    public void EnterPriceField()  {
+    public void EnterPriceField(String price)  {
         waitForElement(PriceField);
-        driver.findElement(PriceField).sendKeys("5000");
+        driver.findElement(PriceField).sendKeys(price);
     }
 
 }

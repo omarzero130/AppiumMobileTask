@@ -13,6 +13,5 @@ public class ValidateOnErrorTC extends TestBase{
         postAdPage.ClickOnNextButton();
         isDisplayed= postAdPage.ValidateErrorPopup();
         Assert.assertTrue(isDisplayed,"Validation pop up is displayed");
-        //postAdPage.ClickOnCategoryField();
     }
 }

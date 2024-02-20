@@ -75,10 +75,4 @@ public class ChooseLocationPage extends PageBase{
     }
 
 
-
-//    public void ClickOnDistrictField() throws InterruptedException {
-//        waitForElement(DistrictDropdown);
-//        driver.findElement(DistrictDropdown).click();
-//    }
-
 }

@@ -1,15 +1,10 @@
 
 package testCases;
-import Pages.LoginPage;
-import Pages.PostAdPage;
 import Utils.CreateCapabilities;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 

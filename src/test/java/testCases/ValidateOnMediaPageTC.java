@@ -10,7 +10,7 @@ public class ValidateOnMediaPageTC extends TestBase{
     private String pageTitle;
 
     @Test
-    public void  ValidateOnErrorMessage() {
+    public void  ValidateOnMediaPageTitle() {
        AddMediaPageBase addMediaPage = new AddMediaPageBase(super.appiumDriver);
          pageTitle = addMediaPage.AsseronMediaPage();
          Assert.assertEquals(pageTitle,"Add Media");
