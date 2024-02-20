@@ -45,6 +45,7 @@ public class PostAdPage extends PageBase {
     }
 
     public void ClickOnCategoryField()  {
+         By ChooseCategoryDropDown = By.id("com.forsale.forsale:id/chooseCategoryField");
         waitForElement(ChooseCategoryDropDown);
         driver.findElement(ChooseCategoryDropDown).click();
     }

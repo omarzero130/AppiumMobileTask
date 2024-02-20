@@ -1,14 +1,17 @@
 package testCases;
 
 import Pages.*;
+import Utils.TestDataLoader;
 import org.testng.annotations.Test;
 
 public class LoginTC extends TestBase{
-    private HomePage homepage;
-    private LoginPage loginpage ;
+//     HomePage homepage;
+//     LoginPage loginpage
     PostAdPage postAdPage;
     ChooseLocationPage chooselocation;
     boolean isDisplayed;
+
+
 
     AddMediaPageBase addMediaPage;
 
@@ -18,22 +21,15 @@ public class LoginTC extends TestBase{
         super();
     }
 
-//    @Test
-//    public void testLogin() {
-//        String username = TestDataLoader.getUsername();
-//        String password = TestDataLoader.getPassword();
-//
-//        System.out.println("Credentials is"+username + password);
-//
-//        // Perform login using username and password
-//    }
     @Test
     public void login () throws InterruptedException {
-        homepage = new HomePage(super.appiumDriver);
+        String username = TestDataLoader.getUsername();
+        String password = TestDataLoader.getPassword();
+         HomePage homepage = new HomePage(super.appiumDriver);
         homepage.clickOnPostAddButton();
-        loginpage = new LoginPage(super.appiumDriver);
+        LoginPage loginpage = new LoginPage(super.appiumDriver);
         loginpage.LoginToApp();
-        postAdPage =new PostAdPage(super.appiumDriver);
+        //postAdPage =new PostAdPage(super.appiumDriver);
 //        postAdPage.ClickOnNextButton();
 //        isDisplayed= postAdPage.ValidateErrorPopup();
 //        Assert.assertTrue(isDisplayed,"Validation pop up is displayed");

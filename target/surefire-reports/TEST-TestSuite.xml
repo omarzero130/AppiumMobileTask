@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="22.824" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="148.781" tests="4" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\omar.shalaby\AppData\Local\Temp\surefire17276404619281452379\surefirebooter-20240220141950563_3.jar C:\Users\omar.shalaby\AppData\Local\Temp\surefire17276404619281452379 2024-02-20T14-19-50_453-jvmRun1 surefire-20240220141950563_1tmp surefire_0-20240220141950563_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\omar.shalaby\AppData\Local\Temp\surefire17083025872960541336\surefirebooter-20240220163306131_3.jar C:\Users\omar.shalaby\AppData\Local\Temp\surefire17083025872960541336 2024-02-20T16-33-05_999-jvmRun1 surefire-20240220163306131_1tmp surefire_0-20240220163306131_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Workspace\AppiumMobileTask\target\test-classes;D:\Workspace\AppiumMobileTask\target\classes;C:\Users\omar.shalaby\.m2\repository\io\appium\java-client\9.1.0\java-client-9.1.0.jar;C:\Users\omar.shalaby\.m2\repository\org\seleniumhq\selenium\selenium-api\4.18.0\selenium-api-4.18.0.jar;C:\Users\omar.shalaby\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.18.0\selenium-remote-driver-4.18.0.jar;C:\Users\omar.shalaby\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\omar.shalaby\.m2\repository\com\google\guava\guava\33.0.0-jre\guava-33.0.0-jre.jar;C:\Users\omar.shalaby\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\omar.shalaby\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\omar.shalaby\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\omar.shalaby\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\omar.shalaby\.m2\repository\com\google\errorprone\error_prone_annotations\2.23.0\error_prone_annotations-2.23.0.jar;C:\Users\omar.shalaby\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-api\1.35.0\opentelemetry-api-1.35.0.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-context\1.35.0\opentelemetry-context-1.35.0.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.35.0\opentelemetry-exporter-logging-1.35.0.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.35.0\opentelemetry-sdk-common-1.35.0.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.35.0\opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.35.0\opentelemetry-sdk-extension-autoconfigure-1.35.0.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.35.0-alpha\opentelemetry-api-events-1.35.0-alpha.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.35.0\opentelemetry-sdk-trace-1.35.0.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.35.0-alpha\opentelemetry-extension-incubator-1.35.0-alpha.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.35.0\opentelemetry-sdk-1.35.0.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.35.0\opentelemetry-sdk-metrics-1.35.0.jar;C:\Users\omar.shalaby\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.35.0\opentelemetry-sdk-logs-1.35.0.jar;C:\Users\omar.shalaby\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\omar.shalaby\.m2\repository\org\seleniumhq\selenium\selenium-http\4.18.0\selenium-http-4.18.0.jar;C:\Users\omar.shalaby\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\omar.shalaby\.m2\repository\org\seleniumhq\selenium\selenium-json\4.18.0\selenium-json-4.18.0.jar;C:\Users\omar.shalaby\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.18.0\selenium-manager-4.18.0.jar;C:\Users\omar.shalaby\.m2\repository\org\seleniumhq\selenium\selenium-os\4.18.0\selenium-os-4.18.0.jar;C:\Users\omar.shalaby\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\omar.shalaby\.m2\repository\org\seleniumhq\selenium\selenium-support\4.18.0\selenium-support-4.18.0.jar;C:\Users\omar.shalaby\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\omar.shalaby\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\omar.shalaby\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\omar.shalaby\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\omar.shalaby\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\omar.shalaby\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\omar.shalaby\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\omar.shalaby\.m2\repository\org\slf4j\slf4j-api\2.0.5\slf4j-api-2.0.5.jar;C:\Users\omar.shalaby\.m2\repository\org\slf4j\slf4j-simple\2.0.5\slf4j-simple-2.0.5.jar;C:\Users\omar.shalaby\.m2\repository\org\slf4j\slf4j-reload4j\2.0.5\slf4j-reload4j-2.0.5.jar;C:\Users\omar.shalaby\.m2\repository\ch\qos\reload4j\reload4j\1.2.22\reload4j-1.2.22.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\omar.shalaby\AppData\Local\Temp\surefire17276404619281452379\surefirebooter-20240220141950563_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\omar.shalaby\AppData\Local\Temp\surefire17083025872960541336\surefirebooter-20240220163306131_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
@@ -58,7 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="login" classname="testCases.Login" time="12.425">
+  <testcase name="login" classname="testCases.LoginTC" time="11.074">
     <system-out><![CDATA[appium:appActivity: com.forsale.app.features.maincontainer.MainContainerActivity
 platformName: Android
 appium:deviceName: Pixel 4 API 30
@@ -73,5 +73,126 @@ SLF4J: See https://www.slf4j.org/codes.html#multiple_bindings for an explanation
 SLF4J: Actual provider is of type [org.slf4j.simple.SimpleServiceProvider@5034c75a]
 ]]></system-err>
   </testcase>
-  <testcase name="ValidateOnErrorMessage" classname="testCases.ValidateOnError" time="3.284"/>
+  <testcase name="ValidateOnErrorMessage" classname="testCases.ValidateOnErrorTC" time="6.305"/>
+  <testcase name="ValidateOnErrorMessage" classname="testCases.PostAdTC" time="60.104">
+    <failure message="Expected condition failed: waiting for presence of element located by: By.id: com.forsale.forsale:id/chooseCategoryField (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: com.forsale.forsale:id/chooseCategoryField (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Pages.PostAdPage.waitForElement(PostAdPage.java:28)
+	at Pages.PostAdPage.ClickOnCategoryField(PostAdPage.java:48)
+	at testCases.PostAdTC.ValidateOnErrorMessage(PostAdTC.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.0', revision: 'b6bf9de7cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [94744e88-1924-43a7-86ef-5667a4fc3a75, findElement {value=com.forsale.forsale:id/chooseCategoryField, using=id}]
+Capabilities {appium:appActivity: com.forsale.app.features.ma..., appium:appPackage: com.forsale.forsale, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.forsale.app.features.ma..., appPackage: com.forsale.forsale, automationName: UIAutomator2, deviceName: Pixel 4 API 30, platformName: ANDROID, platformVersion: 11.0}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:viewportRect: {height: 2145, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 94744e88-1924-43a7-86ef-5667a4fc3a75
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 33 more
+]]></failure>
+  </testcase>
+  <testcase name="ValidateOnErrorMessage" classname="testCases.ValidateOnMediaPageTC" time="60.119">
+    <failure message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Command: [94744e88-1924-43a7-86ef-5667a4fc3a75, findElement {value=//*[@text=&apos;Add Media&apos;], using=xpath}]&#10;Capabilities {appium:appActivity: com.forsale.app.features.ma..., appium:appPackage: com.forsale.forsale, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.forsale.app.features.ma..., appPackage: com.forsale.forsale, automationName: UIAutomator2, deviceName: Pixel 4 API 30, platformName: ANDROID, platformVersion: 11.0}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:viewportRect: {height: 2145, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: 94744e88-1924-43a7-86ef-5667a4fc3a75" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.0', revision: 'b6bf9de7cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [94744e88-1924-43a7-86ef-5667a4fc3a75, findElement {value=//*[@text='Add Media'], using=xpath}]
+Capabilities {appium:appActivity: com.forsale.app.features.ma..., appium:appPackage: com.forsale.forsale, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.forsale.app.features.ma..., appPackage: com.forsale.forsale, automationName: UIAutomator2, deviceName: Pixel 4 API 30, platformName: ANDROID, platformVersion: 11.0}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:viewportRect: {height: 2145, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 94744e88-1924-43a7-86ef-5667a4fc3a75
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at Pages.AddMediaPageBase.AsseronMediaPage(AddMediaPageBase.java:15)
+	at testCases.ValidateOnMediaPageTC.ValidateOnErrorMessage(ValidateOnMediaPageTC.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
 </testsuite>

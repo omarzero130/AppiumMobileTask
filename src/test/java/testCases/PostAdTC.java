@@ -9,7 +9,7 @@ public class PostAdTC extends  TestBase {
     @Test
     public void  ValidateOnErrorMessage() throws InterruptedException{
         PostAdPage postAdPage =new PostAdPage(super.appiumDriver);
-          postAdPage.ClickOnCategoryField();
+        postAdPage.ClickOnCategoryField();
         postAdPage.ChooseMainCategory();
         postAdPage.ChooseSubCategory();
         postAdPage.ClickOnDistrictField();

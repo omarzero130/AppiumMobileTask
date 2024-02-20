@@ -8,4 +8,24 @@
             <class name="testCases.ValidateOnMediaPageTC"></class>
         </classes>
     </test>
+    <test name="Test">
+        <classes>
+            <class name="testCases.LoginTC"/>
+            <class name="testCases.ValidateOnErrorTC"></class>
+
+        </classes>
+    </test>
+    <test name="Test3">
+        <classes>
+            <class name="testCases.PostAdTC"></class>
+            <class name="testCases.ValidateOnMediaPageTC"></class>
+        </classes>
+
+    </test>
+    <test name="Test4">
+        <classes>
+            <class name="testCases.ValidateOnMediaPageTC"></class>
+        </classes>
+
+    </test>
 </suite>

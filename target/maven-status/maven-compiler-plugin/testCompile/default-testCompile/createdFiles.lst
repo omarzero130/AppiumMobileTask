@@ -1,1 +1,4 @@
-testCases\ValidateOnError.class
+testCases\PostAdTC.class
+testCases\ValidateOnErrorTC.class
+testCases\LoginTC.class
+testCases\ValidateOnMediaPageTC.class
