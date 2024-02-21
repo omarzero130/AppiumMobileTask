@@ -9,8 +9,7 @@ Mobile Automation Framework using Appium to automate 4sale mobile app
 3. [Prerequisites](#prerequisites)
 4. [Installation](#installation)
 5. [Usage](#usage)
-6. [Configuration](#configuration)
-
+6. [TestCase](#TestcaseRunRecording)
 
 
 ## Introduction
@@ -61,10 +60,24 @@ Appium framework designed for automating tests on the 4Sale mobile app. This fra
 
 2. Run the Android emulator and make sure you update the caps.json file with your device name and Android version 
 
-  ![caps](https://github.com/omarzero130/AppiumMobileTask/assets/31737511/d72cb5e3-8ad5-40ec-93e6-d2af2c9803f6)
+   ```json
+   {"appium:automationName": "UIAutomator2",
+    "platformName": "Android",
+   "appium:platformVersion": "your_platform_version",
+   "appium:deviceName": "your_device_name",
+    "appium:appPackage": "com.forsale.forsale",
+   "appium:appActivity": "com.forsale.app.features.maincontainer.MainContainerActivity"}
+    ```
 
 3. Run the Test Suite in the IDE terminal:
    
    ```bash
    mvn test
+
+
+## TestcaseRunRecording
+
+  https://github.com/omarzero130/AppiumMobileTask/assets/31737511/d17d4eb8-2dee-4276-bc2d-b598150434fd
+
+
 
