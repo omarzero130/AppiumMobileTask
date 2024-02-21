@@ -36,6 +36,7 @@ Appium framework designed for automating tests on the 4Sale mobile app. This fra
 * Android Emulator
 * Node.js
 * Maven
+* allure
   
 
 
@@ -72,11 +73,24 @@ Appium framework designed for automating tests on the 4Sale mobile app. This fra
 3. Run the Test Suite in the IDE terminal:
    
    ```bash
-   mvn test
+   mvn  clean test
 
+4. Run the Test Suite in the IDE terminal:
+   
+   ```bash
+   mvn allure:serve   
+
+   
 
 ## ProjectRun
+
   https://github.com/omarzero130/AppiumMobileTask/assets/31737511/d17d4eb8-2dee-4276-bc2d-b598150434fd
+
+
+## Allure Report Screenshot
+
+ ![allureReporting](https://github.com/omarzero130/AppiumMobileTask/assets/31737511/90c93eb2-a569-4a62-b9e7-0f3cea25eafb)
+
 
 
 
