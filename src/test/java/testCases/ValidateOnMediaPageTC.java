@@ -1,20 +1,23 @@
 package testCases;
 
 import Pages.AddMediaPageBase;
-import Pages.PostAdPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ValidateOnMediaPageTC extends TestBase{
+// ValidateOnMediaPageTC class represents a test case for validating the title of the media page
+public class ValidateOnMediaPageTC extends TestBase {
 
+    // Variable to store the page title
     private String pageTitle;
 
+    // Test method to validate the title of the media page
     @Test
-    public void  ValidateOnMediaPageTitle() {
-       AddMediaPageBase addMediaPage = new AddMediaPageBase(super.appiumDriver);
-         pageTitle = addMediaPage.AsseronMediaPage();
-         Assert.assertEquals(pageTitle,"Add Media");
+    public void ValidateOnMediaPageTitle() {
+        // Initialize the AddMediaPageBase object using the appiumDriver from the parent class TestBase
+        AddMediaPageBase addMediaPage = new AddMediaPageBase(super.appiumDriver);
+        // Retrieve the page title
+        pageTitle = addMediaPage.AsseronMediaPage();
+        // Assert that the retrieved page title matches the expected title "Add Media"
+        Assert.assertEquals(pageTitle, "Add Media");
     }
-
-
 }

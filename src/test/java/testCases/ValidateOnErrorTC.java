@@ -4,14 +4,26 @@ import Pages.PostAdPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ValidateOnErrorTC extends TestBase{
+// ValidateOnErrorTC class represents a test case for validating error messages when user try to proceed without selecting category
+public class ValidateOnErrorTC extends TestBase {
 
-    private  boolean isDisplayed;
+    // Boolean variable to track whether the error popup is displayed
+    private boolean isDisplayed;
+
+    // Test method to validate the error message
     @Test
-    public void  ValidateOnErrorMessage() throws InterruptedException{
-         PostAdPage postAdPage =new PostAdPage(super.appiumDriver);
+    public void ValidateOnErrorMessage() throws InterruptedException {
+
+        // Initialize the PostAdPage object using the appiumDriver from the parent class TestBase
+        PostAdPage postAdPage = new PostAdPage(super.appiumDriver);
+
+        // Click on the next button to proceed, which may trigger an error popup
         postAdPage.ClickOnNextButton();
-        isDisplayed= postAdPage.ValidateErrorPopup();
-        Assert.assertTrue(isDisplayed,"Validation pop up is displayed");
+
+        // Validate if the error popup is displayed
+        isDisplayed = postAdPage.ValidateErrorPopup();
+
+        // Assert that the error popup is displayed, if not, fail the test with a custom failure message
+        Assert.assertTrue(isDisplayed, "Validation pop up is displayed");
     }
 }

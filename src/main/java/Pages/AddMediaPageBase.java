@@ -7,21 +7,30 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+// AddMediaPageBase class serves as the base class for pages related to adding media in the mobile app
 public class AddMediaPageBase extends PageBase {
+
+    // Page title variable
     public String Pagetitle;
+
+    // Constructor for the AddMediaPageBase class
     public AddMediaPageBase(AppiumDriver driver) {
-        super(driver);
+        super(driver); // Call the constructor of the parent class (PageBase)
     }
+
+    // Locator for the page title element
     private By MediaPageTitle = By.xpath("//*[@text='Add Media']");
 
+    // Method to wait for an element to be present
     public void waitForElement(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
-    public String AsseronMediaPage() {
-        waitForElement(MediaPageTitle);
-        Pagetitle = driver.findElement(MediaPageTitle).getText().toString();
-        return Pagetitle;
-    }
 
+    // Method to assert the presence of the media page based on the page title
+    public String AsseronMediaPage() {
+        waitForElement(MediaPageTitle); // Wait for the media page title to be present
+        Pagetitle = driver.findElement(MediaPageTitle).getText().toString(); // Get the text of the page title
+        return Pagetitle; // Return the page title text
+    }
 }
