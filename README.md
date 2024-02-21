@@ -27,22 +27,19 @@ Mobile Automation Framework using Appium to automate 4sale
 - Assert on Error message
 - Fill mutilple fields in post an Ad flow
 
-## Getting Started
+# Getting Started
 
-### Dependencies
+## Dependencies
 
 * Java jdk 21
 * Appium version v2.5.1
 * Android Emulator
 
 
-### Installation
+## Installation
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/omarzero130/AppiumMobileTask.git
-
-   ## Project run
-   
 
 
