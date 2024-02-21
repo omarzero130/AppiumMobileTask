@@ -9,7 +9,7 @@ Mobile Automation Framework using Appium to automate 4sale mobile app
 3. [Prerequisites](#prerequisites)
 4. [Installation](#installation)
 5. [Usage](#usage)
-6. [TestCase Run Video](#TestCaseRunVideo)
+6. [Project Run](#ProjectRun)
 
 
 ## Introduction
@@ -75,8 +75,7 @@ Appium framework designed for automating tests on the 4Sale mobile app. This fra
    mvn test
 
 
-## TestCase Run Video
-
+## ProjectRun
   https://github.com/omarzero130/AppiumMobileTask/assets/31737511/d17d4eb8-2dee-4276-bc2d-b598150434fd
 
 
