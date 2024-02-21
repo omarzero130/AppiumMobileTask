@@ -12,6 +12,10 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <allure.version>2.24.0</allure.version>
+        <allure.cmd.download.url>
+            https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline
+        </allure.cmd.download.url>
     </properties>
     <dependencies>
 
@@ -54,6 +58,19 @@
             <version>2.0.5</version>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-maven</artifactId>
+            <version>2.12.0</version>
+
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.21.0</version>
+        </dependency>
+
 
     </dependencies>
     <build>
@@ -66,10 +83,26 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/java/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <systemProperties>
+                        <property>
+                            <name>allure.results.directory</name>
+                            <value>${basedir}/target/allure-results</value>
+                        </property>
+                    </systemProperties>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.12.0</version>
+                <configuration>
+                    <resultsDirectory>${basedir}/target/allure-results</resultsDirectory>
+                    <reportVersion>${allure.version}</reportVersion>
+                    <reportDirectory>${basedir}/target/allure-reports</reportDirectory>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 
 </project>

@@ -1,0 +1,9 @@
+Pages\PageBase.class
+Pages\PostAdPage.class
+Pages\AddMediaPageBase.class
+Pages\ChooseLocationPage.class
+Pages\LoginPage.class
+Pages\HomePage.class
+Utils\CreateCapabilities.class
+Utils\LoginTestData.class
+Utils\TestDataLoader.class
