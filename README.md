@@ -49,7 +49,7 @@ Appium framework designed for automating tests on the 4Sale mobile app. This fra
 
 ## Usage
 
-1. Run appium ( use cmd to run the following command OR use appium server GUI ):
+1. Run appium server ( use cmd to run the following command OR use appium server GUI ):
 
    ```bash
    Appium
