@@ -15,28 +15,34 @@ Brief description of your project.
 
 ## Introduction
 
-Provide a brief overview of your project. Explain its purpose, features, and why someone might want to use it.
+Mobile Automation Framework using Appium to automate 4sale 
+
+## About 4Sale Mobile App
+
+4Sale is a popular mobile application that facilitates buying and selling various goods and services in the local market. With a user-friendly interface and extensive features, 4Sale provides users with a convenient platform to browse listings, communicate with sellers, and make transactions.
 
 ## Features
 
-List the key features of your project.
+- Login
+- Assert on Error message
+- Fill mutilple fields in post an Ad flow
 
-- Feature 1
-- Feature 2
-- Feature 3
+## Getting Started
 
-## Prerequisites
+### Dependencies
 
-List all the prerequisites and dependencies required to set up and run your project. Include links to where they can be downloaded or installed.
+* Java jdk 21
+* Appium version v2.5.1
+* Android Emulator
 
-- Prerequisite 1
-- Prerequisite 2
-- Prerequisite 3
 
-## Installation
-
-Step-by-step instructions on how to install and set up your project. Include any necessary commands or configurations.
+### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/omarzero130/AppiumMobileTask.git
+
+   ## Project run
+   
+
+
