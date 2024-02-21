@@ -47,6 +47,11 @@ Appium framework designed for automating tests on the 4Sale mobile app. This fra
    ```bash
    git clone https://github.com/omarzero130/AppiumMobileTask.git
 
+2. Install dependencies:
+  
+   ```bash
+   mvn install
+
 ## Usage
 
 1. Run appium server ( use cmd to run the following command OR use appium server GUI ):
