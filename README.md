@@ -75,7 +75,7 @@ Appium framework designed for automating tests on the 4Sale mobile app. This fra
    ```bash
    mvn  clean test
 
-4. Run the Test Suite in the IDE terminal:
+4. Generate allure report after the test suite run:
    
    ```bash
    mvn allure:serve   
