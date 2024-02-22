@@ -3,13 +3,15 @@ package testCases;
 import Pages.ChooseLocationPage;
 import Pages.PostAdPage;
 import Utils.TestDataLoader;
+import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
 
 // PostAdTC class represents a test case for posting an advertisement
 public class PostAdTC extends TestBase {
 
     // Test method to simulate the post advertisement flow
-    @Test
+
+    @Test(testName = "Post ad")
     public void PostAdFlow() throws InterruptedException {
         // Retrieve title and price from test data
         String title = TestDataLoader.getTitle();

@@ -10,10 +10,10 @@ import java.util.Map;
 
 // CreateCapabilities class is responsible for creating DesiredCapabilities for Appium driver initialization
 public class CreateCapabilities {
-    static DesiredCapabilities desiredCapabilities;
+    private static DesiredCapabilities _desiredCapabilities;
 
     // Method to retrieve capabilities from a JSON file
-    public static Map<String, Object> getCapabilities() {
+    public static Map<String, Object> GetCapabilities() {
         Map<String, Object> keyValueMap = new HashMap<>();
         JSONParser parser = new JSONParser();
         try (Reader reader = new FileReader(System.getProperty("user.dir")+"/src/main/resources/Configs/caps.json")) {
@@ -30,19 +30,19 @@ public class CreateCapabilities {
     }
 
     // Method to set DesiredCapabilities based on retrieved capabilities
-    public static DesiredCapabilities setDesiredCapabilities() {
-        desiredCapabilities = new DesiredCapabilities();
+    public static DesiredCapabilities SetDesiredCapabilities() {
+        _desiredCapabilities = new DesiredCapabilities();
         // Retrieve capabilities from the JSON file
-        Map<String, Object> keyValueMap = getCapabilities();
+        Map<String, Object> keyValueMap = GetCapabilities();
         // Set each capability in the DesiredCapabilities object
         for (Map.Entry<String, Object> entry : keyValueMap.entrySet()) {
-            desiredCapabilities.setCapability(entry.getKey(), entry.getValue());
+            _desiredCapabilities.setCapability(entry.getKey(), entry.getValue());
         }
-        return desiredCapabilities;
+        return _desiredCapabilities;
     }
 
     // Main method for testing purposes, retrieves and prints capabilities
     public static void main(String[] args) {
-        getCapabilities();
+        GetCapabilities();
     }
 }

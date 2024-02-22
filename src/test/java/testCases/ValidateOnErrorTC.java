@@ -1,6 +1,7 @@
 package testCases;
 
 import Pages.PostAdPage;
+import io.qameta.allure.Feature;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,7 +12,8 @@ public class ValidateOnErrorTC extends TestBase {
     private boolean isDisplayed;
 
     // Test method to validate the error message
-    @Test
+
+    @Test(testName = "Validate on Error Message")
     public void ValidateOnErrorMessage() throws InterruptedException {
 
         // Initialize the PostAdPage object using the appiumDriver from the parent class TestBase

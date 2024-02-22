@@ -22,14 +22,14 @@ public class AddMediaPageBase extends PageBase {
     private By MediaPageTitle = By.xpath("//*[@text='Add Media']");
 
     // Method to wait for an element to be present
-    public void waitForElement(By locator) {
+    public void WaitForElement(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
     // Method to assert the presence of the media page based on the page title
-    public String AsseronMediaPage() {
-        waitForElement(MediaPageTitle); // Wait for the media page title to be present
+    public String AssertonMediaPage() {
+        WaitForElement(MediaPageTitle); // Wait for the media page title to be present
         Pagetitle = driver.findElement(MediaPageTitle).getText().toString(); // Get the text of the page title
         return Pagetitle; // Return the page title text
     }

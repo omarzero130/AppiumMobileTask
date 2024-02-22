@@ -26,7 +26,7 @@ public class TestBase {
 
     // Method to create the AppiumDriver with desired capabilities
     private static AppiumDriver createDriver() {
-        desiredCapabilities = CreateCapabilities.setDesiredCapabilities();
+        desiredCapabilities = CreateCapabilities.SetDesiredCapabilities();
 
         try {
             return new AppiumDriver(new URL(APPIUM_SERVER_URL), desiredCapabilities);

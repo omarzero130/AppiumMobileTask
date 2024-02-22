@@ -11,12 +11,12 @@ public class ValidateOnMediaPageTC extends TestBase {
     private String pageTitle;
 
     // Test method to validate the title of the media page
-    @Test
+    @Test(testName = "Validate on Media Page title")
     public void ValidateOnMediaPageTitle() {
         // Initialize the AddMediaPageBase object using the appiumDriver from the parent class TestBase
         AddMediaPageBase addMediaPage = new AddMediaPageBase(super.appiumDriver);
         // Retrieve the page title
-        pageTitle = addMediaPage.AsseronMediaPage();
+        pageTitle = addMediaPage.AssertonMediaPage();
         // Assert that the retrieved page title matches the expected title "Add Media"
         Assert.assertEquals(pageTitle, "Add Media");
     }
