@@ -14,7 +14,7 @@ public class TestBase {
     public static AppiumDriver appiumDriver;
     public static DesiredCapabilities desiredCapabilities;
     // URL of the Appium server
-    public static final String APPIUM_SERVER_URL = "http://localhost:4723/";
+    public static final String APPIUM_SERVER_URL = "http://127.0.0.1:4723/";
 
     // Method to initialize the AppiumDriver
     public AppiumDriver initializeDriver() {
